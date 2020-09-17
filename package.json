@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "brixi": "brixi",
+        "cleanup": "node ./build/cleanup.js",
+        "build": "npm run cleanup && tsc && cssmonster",
+        "preview": "serve ./public"
+    },
+    "dependencies": {
+        "brixi": "^0.2.2",
+        "cssmonster": "^0.3.1",
+        "serve": "^11.3.2",
+        "typescript": "^4.0.2"
+    }
+}

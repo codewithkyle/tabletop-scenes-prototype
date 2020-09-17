@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabletop Style Prototype</title>
+    <meta name="description" content="Prototyping different tabletop map styles using CSS filters.">
+    
+    <link href="/normalize.css" ref="stylesheet">
+    <link href="/brixi.css" ref="stylesheet">
+    <link href="/main.css" ref="stylesheet">
+
+    <script src="/main.js" defer></script>
+</head>
+<body>
+    <switcher-component>
+        <select>
+            <option value="midday" selected>Midday</option>
+            <option value="morning">Morning</option>
+            <option value="evening">Evening</option>
+            <option value="night">Night</option>
+            <option value="foggy">Foggy</option>
+            <option value="stormy">Stormy</option>
+        </select>
+    </switcher-component>
+    <tabletop></tabletop>
+</body>
+</html>

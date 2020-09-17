@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outFile": "./public/main.js",
+        "lib": ["DOM", "ES2019"],
+        "module": "None",
+        "target": "ES2019"
+    },
+    "include": ["./src"]
+}
