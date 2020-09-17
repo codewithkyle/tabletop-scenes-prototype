@@ -1,6 +1,6 @@
 module.exports = {
     env: "production",
-    outDir: "./public",
+    outDir: "./public/css",
     sources: "./src",
     purge: false,
 };

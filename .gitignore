@@ -1,2 +1,4 @@
 node_modules
-/brixi
+brixi
+public/css
+public/js

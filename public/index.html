@@ -6,11 +6,10 @@
     <title>Tabletop Style Prototype</title>
     <meta name="description" content="Prototyping different tabletop map styles using CSS filters.">
     
-    <link href="/normalize.css" ref="stylesheet">
-    <link href="/brixi.css" ref="stylesheet">
-    <link href="/main.css" ref="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/brixi.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
-    <script src="/main.js" defer></script>
 </head>
 <body>
     <switcher-component>
@@ -23,6 +22,17 @@
             <option value="stormy">Stormy</option>
         </select>
     </switcher-component>
-    <tabletop></tabletop>
+    <tabletop-component>
+        <img draggable="false" src="/test.jpg" />
+        <large-objects>
+            <img style="top: 250px;left: 250px;" src="/tree.png" draggable="false">
+        </large-objects>
+        <small-objects>
+            <img style="top: 450px;left: 200px;" src="/rock.png" draggable="false">
+        </small-objects>
+        <div class="js-container container"></div>
+    </tabletop-component>
+
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

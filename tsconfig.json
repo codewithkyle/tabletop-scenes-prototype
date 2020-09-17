@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outFile": "./public/main.js",
+        "outFile": "./public/js/main.js",
         "lib": ["DOM", "ES2019"],
         "module": "None",
         "target": "ES2019"
