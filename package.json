@@ -3,7 +3,8 @@
         "brixi": "brixi",
         "cleanup": "node ./build/cleanup.js",
         "build": "npm run cleanup && tsc && cssmonster",
-        "preview": "serve ./public"
+        "preview": "serve ./public",
+        "deploy": "node ./build/deploy.js"
     },
     "dependencies": {
         "brixi": "^0.2.2",

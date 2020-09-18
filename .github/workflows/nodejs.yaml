@@ -19,7 +19,7 @@ jobs:
               run: npm ci
 
             - name: Build
-              run: npm run predeploy
+              run: npm run build
 
             - name: Deploy
               run: npm run deploy
