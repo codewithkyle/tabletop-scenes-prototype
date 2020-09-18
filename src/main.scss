@@ -100,12 +100,12 @@ tabletop-component {
 
         large-objects {
             img {
-                filter: drop-shadow(0 0 6px rgba(9, 34, 51, 0.3)) brightness(0.75);
+                filter: drop-shadow(0 0 6px rgba(9, 34, 51, 0.3)) brightness(0.8);
             }
         }
         small-objects {
             img {
-                filter: drop-shadow(0 0 4px rgba(9, 34, 51, 0.3)) brightness(0.75);
+                filter: drop-shadow(0 0 4px rgba(9, 34, 51, 0.3)) brightness(0.8);
             }
         }
     }
@@ -134,6 +134,58 @@ tabletop-component {
     }
 
     &.stormy {
+        filter: contrast(0.8) saturate(0.5);
+
+        &::after {
+            background: radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.15));
+        }
+
+        large-objects {
+            img {
+                filter: drop-shadow(0 0 12px rgba(9, 34, 51, 0.3)) brightness(0.8);
+            }
+        }
+        small-objects {
+            img {
+                filter: drop-shadow(0 0 6px rgba(9, 34, 51, 0.3)) brightness(0.8);
+            }
+        }
+
+        rain-component {
+            opacity: 0.6;
+        }
+
+        fog-component {
+            opacity: 0.6;
+        }
+    }
+
+    &.stormy-night {
+        filter: brightness(0.6) contrast(1.5) hue-rotate(47deg) saturate(0.5);
+
+        &::after {
+            background: radial-gradient(rgba(0, 56, 212, 0.1) 50%, rgba(0, 56, 212, 0.3));
+        }
+
+        large-objects {
+            img {
+                filter: drop-shadow(0 0 6px rgba(9, 34, 51, 0.3)) brightness(0.8);
+            }
+        }
+        small-objects {
+            img {
+                filter: drop-shadow(0 0 4px rgba(9, 34, 51, 0.3)) brightness(0.8);
+            }
+        }
+
+        rain-component {
+            opacity: 0.6;
+            filter: hue-rotate(-68deg);
+        }
+
+        fog-component {
+            opacity: 0.6;
+        }
     }
 
     img {
@@ -214,6 +266,27 @@ tabletop-component {
     }
 
     fog-component {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        pointer-events: none;
+        user-select: none;
+        opacity: 0;
+        transition: opacity 300ms var(--ease-in-out);
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    rain-component {
         position: absolute;
         width: 100%;
         height: 100%;

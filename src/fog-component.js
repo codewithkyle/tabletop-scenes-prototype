@@ -24,8 +24,6 @@ class FogParticle {
     render() {
         if (!this.image) return;
 
-        console.log("drawn");
-
         this.ctx.drawImage(this.image, this.x - this.image.width / 2, this.y - this.image.height / 2, 400, 400);
 
         this.x += this.xVelocity;
