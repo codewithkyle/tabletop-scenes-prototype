@@ -9,30 +9,37 @@
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/brixi.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/select-component.css" rel="stylesheet">
 
 </head>
 <body>
-    <switcher-component>
-        <select>
-            <option value="midday" selected>Midday</option>
-            <option value="morning">Morning</option>
-            <option value="evening">Evening</option>
-            <option value="night">Night</option>
-            <option value="foggy">Foggy</option>
-            <option value="stormy">Stormy</option>
-        </select>
-    </switcher-component>
-    <tabletop-component>
-        <img draggable="false" src="/test.jpg" />
+    <header>
+        <switcher-component>
+            <select-component>
+                <select name="example" id="example" required>
+                    <option value="midday" selected>Midday</option>
+                    <option value="morning">Morning</option>
+                    <option value="evening">Evening</option>
+                    <option value="night">Night</option>
+                    <option value="foggy">Foggy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+                <i>
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+                </i>
+            </select-component>
+        </switcher-component>
+    </header>
+    <tabletop-component class="midday">
+        <img draggable="false" src="/images/grass.jpg" />
         <large-objects>
-            <img style="top: 250px;left: 250px;" src="/tree.png" draggable="false">
+            <img style="top: 250px;left: 250px;" src="/images/tree.png" draggable="false">
         </large-objects>
         <small-objects>
-            <img style="top: 450px;left: 200px;" src="/rock.png" draggable="false">
+            <img style="top: 450px;left: 200px;" src="/images/rock.png" draggable="false">
         </small-objects>
         <div class="js-container container"></div>
     </tabletop-component>
-
     <script src="/js/main.js" defer></script>
 </body>
 </html>
