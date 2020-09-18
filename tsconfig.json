@@ -3,7 +3,9 @@
         "outFile": "./public/js/main.js",
         "lib": ["DOM", "ES2019"],
         "module": "None",
-        "target": "ES2019"
+        "target": "ES2019",
+        "allowJs": true,
+        "checkJs": false
     },
     "include": ["./src"]
 }
